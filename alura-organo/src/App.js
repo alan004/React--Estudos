@@ -1,12 +1,20 @@
+import { useState } from "react";
 import Formulario from "./componentes/Formulario";
 import Banner from "./componentes/banner";
-import InputTexto from "./componentes/inputTexto";
 
 function App() {
+  const [jogadores, setJogadores] = useState([])
+
+  const novoJogadorAdicionado = (jogador) => {
+    console.log(jogador)
+    setJogadores({...jogadores, jogador})
+  }
+
+  
   return (
     <div className="App">
       <Banner />
-      <Formulario />
+      <Formulario jogadorCadastrado={jogador => novoJogadorAdicionado(jogador)} />
     </div>
   );
 }
