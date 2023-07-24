@@ -4,6 +4,7 @@ const DropDown = (props) => {
     <div className="dropdown">
       <label>{props.label}</label>
       <select onChange={e => props.naAlteracao(e.target.value)} required={props.required} value={props.valor}>
+        <option>Selecione o time:</option>
         {props.itens.map((e) => (
           <option key={e}>{e}</option>
         ))}
