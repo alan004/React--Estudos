@@ -30,7 +30,6 @@ function App() {
   ]
 
   const novoJogadorAdicionado = (jogador) => {
-    console.log(jogador)
     setJogadores([...jogadores, jogador])
   }
 
