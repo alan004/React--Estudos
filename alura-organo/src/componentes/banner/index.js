@@ -3,7 +3,7 @@ import "./banner.css";
 function Banner() {
   return (
     <header className="banner">
-      <img src="/imagens/banner.png" alt="Imagem do banner principal" />
+      <img src="/imagens/Banner.png" alt="Imagem do banner principal" />
     </header>
   );
 }
