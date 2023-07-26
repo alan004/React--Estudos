@@ -33,12 +33,16 @@ function App() {
     setJogadores([...jogadores, jogador])
   }
 
+  function deletarJogador(){
+      console.log('deu certo')
+  }
+
   
   return (
     <div className="App">
       <Banner />
       <Formulario times={times.map(time => time.nome)} jogadorCadastrado={jogador => novoJogadorAdicionado(jogador)} />
-      {times.map(time =>  <Time key={time.nome} nome={time.nome} corPrimaria={time.corPrimaria} corSecundaria={time.corSecundaria} jogadores={jogadores.filter(jogador => jogador.time === time.nome)} />)}
+      {times.map(time =>  <Time  key={time.nome} nome={time.nome} corPrimaria={time.corPrimaria} corSecundaria={time.corSecundaria} jogadores={jogadores.filter(jogador => jogador.time === time.nome)} onDelete={deletarJogador} />)}
       <Rodape/>
     </div>
   );
