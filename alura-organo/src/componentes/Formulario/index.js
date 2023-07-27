@@ -1,5 +1,5 @@
 import "./Formulario.css";
-import InputTexto from "../inputTexto";
+import Input from "../Input";
 import DropDown from "../DropDown";
 import Btn from "../btn";
 import { useState } from "react";
@@ -29,9 +29,9 @@ const Formulario = (props) => {
     <section className="formulario">
       <form onSubmit={onSave}>
         <h2>Preencha os dados para criar o card do seu álbum.</h2>
-        <InputTexto required={true} label="Nome" placeholder="Digite seu nome" valor={nome} naAlteracao={valor => setNome(valor)} />
-        <InputTexto required={true} label="Posição" placeholder="Digite seu posição" valor={posicao} naAlteracao={valor => setPosicao(valor)} />
-        <InputTexto required={true} label="Imagem" placeholder="Digite o endereço da imagem" valor={imagem} naAlteracao={valor => setImagem(valor)} />
+        <Input required={true} label="Nome" placeholder="Digite seu nome" valor={nome} naAlteracao={valor => setNome(valor)} />
+        <Input required={true} label="Posição" placeholder="Digite seu posição" valor={posicao} naAlteracao={valor => setPosicao(valor)} />
+        <Input required={true} label="Imagem" placeholder="Digite o endereço da imagem" valor={imagem} naAlteracao={valor => setImagem(valor)} />
         <DropDown required={true} itens={props.times} label="Time" valor={time} naAlteracao={valor => setTime(valor)} />
         <Btn>Criar Figurinha</Btn>
       </form>
@@ -43,8 +43,8 @@ const Formulario = (props) => {
       }
       }>
         <h2>Preencha os dados para criar um novo time.</h2>
-        <InputTexto required={true} label="Nome Time" placeholder="Digite o nome do time" valor={nomeTime} naAlteracao={valor => setNomeTime(valor)} />
-        <InputTexto required={true} label="Cor time" placeholder="Digite a cor do time" valor={corTime} naAlteracao={valor => setCorTime(valor)} />
+        <Input required={true} label="Nome Time" placeholder="Digite o nome do time" valor={nomeTime} naAlteracao={valor => setNomeTime(valor)} />
+        <Input type='color' required={true} label="Cor time" placeholder="Digite a cor do time" valor={corTime} naAlteracao={valor => setCorTime(valor)} />
         <Btn>Criar novo time</Btn>
       </form>
     </section>
