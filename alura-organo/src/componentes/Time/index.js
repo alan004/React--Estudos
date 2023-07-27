@@ -1,14 +1,17 @@
 import Card from '../Card'
+import hexToRgba from 'hex-to-rgba';
 import './Time.css'
 
 
-const Time = (props) =>{
+const Time = ({time, jogadores, onDelete, mudarCor}) =>{
     return (
-        props.jogadores.length > 0 && <section className="time" style={{backgroundColor: props.corSecundaria} }>
-            <h3 style={{ borderColor:props.corPrimaria }} >{props.nome}</h3>
+
+        jogadores.length > 0 && <section className="time" style={{backgroundColor: hexToRgba(time.cor, 0.6)} }>
+            <input onChange={e => mudarCor(e.target.value, time.id)} value={time.cor} type='color' className='input__cor'/>
+            <h3 style={{ borderColor:time.cor }} >{time.nome}</h3>
             <div className='jogadores'>
-                {props.jogadores.map(jogador => {  
-                    return <Card corPrimaria={props.corPrimaria} key={jogador.nome} nome={jogador.nome} imagem={jogador.imagem} posicao={jogador.posicao} onDelete={props.onDelete} />
+                {jogadores.map(jogador => {  
+                    return <Card corPrimaria={time.cor} key={jogador.nome} nome={jogador.nome} imagem={jogador.imagem} posicao={jogador.posicao} onDelete={onDelete} />
                     })}
             </div>
         </section>
