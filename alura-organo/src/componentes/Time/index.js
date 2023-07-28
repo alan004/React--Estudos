@@ -3,7 +3,7 @@ import hexToRgba from 'hex-to-rgba';
 import './Time.css'
 
 
-const Time = ({time, jogadores, onDelete, mudarCor}) =>{
+const Time = ({time, jogadores, onDelete, mudarCor, onFavorite}) =>{
     return (
 
         jogadores.length > 0 && <section className="time" style={{backgroundColor: hexToRgba(time.cor, 0.6)} }>
@@ -11,7 +11,7 @@ const Time = ({time, jogadores, onDelete, mudarCor}) =>{
             <h3 style={{ borderColor:time.cor }} >{time.nome}</h3>
             <div className='jogadores'>
                 {jogadores.map(jogador => {  
-                    return <Card corPrimaria={time.cor} key={jogador.nome} nome={jogador.nome} imagem={jogador.imagem} posicao={jogador.posicao} onDelete={onDelete} />
+                    return <Card favorito={jogador.favorito} onFavorite={onFavorite} corPrimaria={time.cor} key={jogador.nome} nome={jogador.nome} imagem={jogador.imagem} posicao={jogador.posicao} onDelete={onDelete} />
                     })}
             </div>
         </section>

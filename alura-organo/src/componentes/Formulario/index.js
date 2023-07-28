@@ -12,12 +12,13 @@ const Formulario = (props) => {
   const [time, setTime] = useState('')
   const [nomeTime, setNomeTime] = useState('')
   const [corTime, setCorTime] = useState('')
+  const favorito = false
 
 
   const onSave = (e) => {
     e.preventDefault();
     props.jogadorCadastrado ({
-      nome, posicao, imagem, time,
+      nome, posicao, imagem, time, favorito
     })
     setImagem('')
     setTime('')
@@ -43,8 +44,8 @@ const Formulario = (props) => {
       }
       }>
         <h2>Preencha os dados para criar um novo time.</h2>
-        <Input required={true} label="Nome Time" placeholder="Digite o nome do time" valor={nomeTime} naAlteracao={valor => setNomeTime(valor)} />
-        <Input type='color' required={true} label="Cor time" placeholder="Digite a cor do time" valor={corTime} naAlteracao={valor => setCorTime(valor)} />
+        <Input required={true} label="Nome do time" placeholder="Digite o nome do time" valor={nomeTime} naAlteracao={valor => setNomeTime(valor)} />
+        <Input type='color' required={true} label="Cor do time" placeholder="Digite a cor do time" valor={corTime} naAlteracao={valor => setCorTime(valor)} />
         <Btn>Criar novo time</Btn>
       </form>
     </section>

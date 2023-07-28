@@ -13,6 +13,7 @@
     color: white;
     padding: 2.5rem;
     z-index: 3;
+    font-weight: bolder;
 } 
 .footer .fundo{
     width: 100%;
