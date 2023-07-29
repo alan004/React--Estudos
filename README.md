@@ -12,6 +12,7 @@ Funções disponíveis:
 - Cadastro de time
 - Alteração da cor do time
 - Deletar jogador
+- Adicionar Favorito
 
 ![Banner do app](https://user-images.githubusercontent.com/17684918/256535412-33ba92fa-efa3-4e88-89ea-2990308c44b6.png)
 ![Cards do app](https://user-images.githubusercontent.com/17684918/256535390-67d622f9-ea3f-40f1-a5cb-4f4dd2f72bfc.png)
