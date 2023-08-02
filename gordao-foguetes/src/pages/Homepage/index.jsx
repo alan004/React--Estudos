@@ -1,6 +1,7 @@
 
 import Banner from "../../components/Banner";
 import Cabecalho from "../../components/Cabecalho";
+import Galeria from "../../components/Galeria";
 import Menu from "../../components/Menu";
 import Rodape from "../../components/Rodape";
 import bannerSergio from './banner.png'
@@ -16,6 +17,9 @@ export default function Homepage(){
                 <Banner css={styles.principal__imagem} imagem={bannerSergio}/>
             </section>
         </main>
+        <div className={styles.galeria}>
+            <Galeria/>
+        </div>
         <Rodape/>
         </>
     )
