@@ -1,0 +1,30 @@
+@import "../../styles/variaveis";
+
+.rodape {
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    background-color: $azul-rodape;
+    box-sizing: border-box;
+    width: 100%;
+    height: 5rem;
+    padding: 0 2.2rem;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    box-shadow: 0px -2px 30px rgba($color: #000000, $alpha: 0.5);
+
+    &__social{
+            display: flex;
+    gap: 2.16rem;
+    align-items: center;
+    justify-content: space-around;
+    }
+}
+
+.rodape>a{
+    color: $cor-do-texto;
+    font-family: $fonte-normal;
+    text-decoration: none;
+}
