@@ -1,10 +1,10 @@
 
-import Banner from "../../components/Banner";
-import Cabecalho from "../../components/Cabecalho";
-import Galeria from "../../components/Galeria";
-import Menu from "../../components/Menu";
-import Populares from "../../components/Populares";
-import Rodape from "../../components/Rodape";
+import Banner from "components/Banner";
+import Cabecalho from "components/Cabecalho";
+import Galeria from "components/Galeria";
+import Menu from "components/Menu";
+import Populares from "components/Populares";
+import Rodape from "components/Rodape";
 import bannerSergio from './banner.png'
 import styles from './homepage.module.scss'
 
