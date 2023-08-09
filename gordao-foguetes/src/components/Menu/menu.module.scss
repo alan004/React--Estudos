@@ -1,43 +1,119 @@
 @import "../../styles/variaveis";
-.menu {
-    font-family: $fonte-normal;
-    width: 18%;
-  
-    &__lista {
-      padding-left: 0.5rem;
-      margin: 0;
-      height: 276px;
-      list-style: none;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-    }
-  
-    &__item {
-      display: flex;
-      justify-content: flex-start;
-      align-items: center;
-  
-      &:first-child {
-        a {
-          font-weight: 700;
-          color: #7b78e5;
-          font-family: "GandhiSansRegular";
+
+  @media (min-width: 375px) {
+    .menu {
+      font-family: $fonte-normal;
+      width: 18%;
+    
+      &__lista {
+        margin: 0;
+        list-style: none;
+        display: none;
+        flex-direction: column;
+        justify-content: space-around;
+      }
+    
+      &__item {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+    
+        &:first-child {
+          a {
+            font-weight: 700;
+            color: #7b78e5;
+            font-family: "GandhiSansRegular";
+          }
         }
       }
+      &__ativarCheckbox{
+        display: none;
+      }
+      &__ativarIMG{
+        position: absolute;
+        top: 1.8rem;
+        right: 15px;
+      }
+      &__ativarCheckbox:checked~.menu__lista{
+        display: flex;
+        z-index: 1;
+        gap: 1rem;
+        position: absolute;
+        top: 0px;
+        right: 0;
+        width: 30%;
+        padding: 40px 0 15px 15px;
+        background-image: linear-gradient($azul-escuro, $azul-claro);
+      }
+      &__ativarCheckbox:checked + label{
+        z-index: 2;
+      }
+    
+      img {
+        margin-right: 0.5rem;
+        width: 15px;
+        height: 15px;
+        cursor: pointer;
+      }
+    
+      a {
+        text-decoration: none;
+        font-size: 13px;
+        color: $cor-do-texto;
+        font-family: $fonte-normal
+      }
+  }
+    
+  }
+
+  @media (min-width: 768px) {
+    .menu{
+      display: block;
+      width:80%;
+      margin-bottom: 13px;
+      &__lista{
+        flex-direction: row;
+        display: flex;
+      }
+      &__item{
+        flex-direction: row;
+        white-space: nowrap;
+      }
+      &__ativarIMG{
+        display: none;
+      }
+      img {
+        width: 20px;
+        height: 20px;
     }
-  
-    img {
-      margin-right: 0.5rem;
-      width: 25px;
-      height: 25px;
-      cursor: pointer;
     }
-  
-    a {
-      text-decoration: none;
-      font-size: 1.125rem;
-      color: $cor-do-texto;
-      font-family: $fonte-normal
+    
+  }
+
+  @media (min-width: 1280px) {
+    .menu {  
+      width: 18%;  
+      display: flex;
+      margin-bottom: 0;
+      &__lista {
+        flex-direction: column;
+        height: 276px;
+        padding-left: 0.5rem;
+        justify-content: space-around;
+      }
+      &__item{
+        flex-direction: row;
+        align-items: center;
+        white-space:pre-wrap;
+      }
+      
+      a{
+        font-size: 1.125rem;
+
+      }
+      img {
+        width: 25px;
+        height: 25px;
+    }
     }
   }

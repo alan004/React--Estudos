@@ -1,11 +1,13 @@
 @import "../../styles/variaveis";
 
-.cabecalho {
+@media (min-width: 378px) {
+  .cabecalho {
     font-family: $fonte-normal;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 1.5rem 24px;
+    margin-right: calc(24px + 1.8rem);
   
     &__container {
       display: flex;
@@ -44,8 +46,18 @@
         font-size: 1rem;
       }
     }
-  
+    
     img {
       cursor: pointer;
+      max-width: 150px;
+    }
+  }
+}
+@media (min-width: 768px) {
+  
+}
+@media (min-width: 1280px) {
+    .cabecalho{
+      margin: 1.5rem 24px;
     }
   }

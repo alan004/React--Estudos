@@ -8,25 +8,19 @@
     {
       "path": "/assets/images/icones/mais-vistas-inativo.png",
       "alt": "ícone de um olho",
-      "link": "Mais vistas",
+      "link": "Galeria",
       "id": 2
-    },
-    {
-      "path": "/assets/images/icones/mais-curtidas-inativo.png",
-      "alt": "ícone de uma mão com o polegar opositor levantado",
-      "link": "Mais curtidas",
-      "id": 3
     },
     {
       "path": "/assets/images/icones/novas-inativo.png",
       "alt": "icone de uma estrelinha brilhante",
-      "link": "Novas",
-      "id": 4
+      "link": "Projeto Fortão Foguetes",
+      "id": 3
     },
     {
       "path": "/assets/images/icones/surpreenda-me-inativo.png",
       "alt": "ícone de uma lâmpada",
-      "link": "Surpreenda-me",
-      "id": 5
+      "link": "Space Today",
+      "id": 4
     }
   ]
