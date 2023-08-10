@@ -1,9 +1,11 @@
 @import "../../styles/variaveis";
 
+@media (min-width: 378px) {
 .tags {
-  width: 65vw;
+  width: 88vw;
   display: flex;
   justify-content: space-between;
+  gap: 2rem;
   align-items: center;
   color: $cor-do-texto;
   font-family: $fonte-normal;
@@ -19,6 +21,8 @@
     padding: 0;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 13px;
 
     li {
       background-color: $tag-color;
@@ -26,5 +30,19 @@
       border-radius: 8px;
       cursor: pointer;
     }
+  }
+}
+}
+@media (min-width: 768px) {
+  .tags{
+    width: 83vw;
+    &__lista{
+      gap: 0;
+    }
+  }
+}
+@media (min-width: 1280px) {
+  .tags{
+    width: 80vw;
   }
 }

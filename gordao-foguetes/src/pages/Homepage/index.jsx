@@ -17,7 +17,7 @@ export default function Homepage(){
                 <Menu/>
                 <Banner css={styles.principal__imagem} imagem={bannerSergio}/>
             </section>
-            <div className={styles.galeria}>
+            <div className={styles.conteudo}>
                 <Galeria/>
             </div>
         </main>
