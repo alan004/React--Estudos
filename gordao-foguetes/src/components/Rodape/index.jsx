@@ -1,17 +1,15 @@
 import styles from './rodape.module.scss'
-import face from './facebook.svg'
-import twitter from './twitter.svg'
-import instagram from './instagram.svg'
+import linkedin from './linkedin.svg'
+import git from './github.svg'
 
 export default function Rodape(){
     return (
         <footer className={styles.rodape}>
             <div className={styles.rodape__social}>
-                <a href="#"><img src={face} alt="Logo Facebook" /></a>
-                <a href="#"><img src={twitter} alt="Logo Twitter" /></a>
-                <a href="#"><img src={instagram} alt="Logo instagram" /></a>
+                <a target='_blank' href="https://www.linkedin.com/in/alan-abilio/"><img src={linkedin} alt="Logo Linkedin" /></a>
+                <a target='_blank' href="https://github.com/alan004"><img src={git} alt="Logo Github" /></a>
             </div>
-            <a href="https://github.com/alan004">
+            <a target='_blank' href="https://github.com/alan004">
                 <p>Desenvolvido por Alan004</p>
             </a>
         </footer>
