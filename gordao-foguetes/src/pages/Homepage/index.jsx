@@ -19,7 +19,6 @@ export default function Homepage(){
             </section>
             <div className={styles.galeria}>
                 <Galeria/>
-                <Populares/>
             </div>
         </main>
         <Rodape/>

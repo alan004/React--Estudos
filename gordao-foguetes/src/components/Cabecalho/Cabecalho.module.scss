@@ -4,17 +4,18 @@
   .cabecalho {
     font-family: $fonte-normal;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    gap: .5rem;
     margin: 1.5rem 24px;
-    margin-right: calc(24px + 1.8rem);
   
     &__container {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 6px 10px 6px 0px;
-      width: 10%;
+      padding: 6px 10px 6px 6px;
+      width: 100%;
       position: relative;
       z-index: 0;
   
@@ -50,12 +51,14 @@
     img {
       cursor: pointer;
       max-width: 175px;
+      align-self: flex-start;
     }
   }
 }
 @media (min-width: 768px) {
   .cabecalho{
     margin: 1.5rem 24px;
+    flex-direction: row;
   
   &__container{
     width: 33%;

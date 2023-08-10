@@ -69,10 +69,11 @@
   @media (min-width: 768px) {
     .menu{
       display: block;
-      width:80%;
+      width:95%;
       margin-bottom: 13px;
       &__lista{
         flex-direction: row;
+        padding: 0;
         display: flex;
       }
       &__item{
