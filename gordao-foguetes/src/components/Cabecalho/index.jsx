@@ -8,7 +8,7 @@ export default function Cabecalho() {
       <img src={logo} alt="Logo Gordao Foguetes" />
       <div className={styles.cabecalho__container}>
         <input className={styles.cabecalho__input} type="text" placeholder="O que você procura?" />
-        <img src={search} alt="ícone de lupa" />
+        <img src={search} alt="ícone de lupa"/>
       </div>
     </header>
   );

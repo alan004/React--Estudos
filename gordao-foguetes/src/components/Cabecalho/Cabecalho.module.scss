@@ -13,8 +13,8 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 6px 10px;
-      width: 33%;
+      padding: 6px 10px 6px 0px;
+      width: 10%;
       position: relative;
       z-index: 0;
   
@@ -54,10 +54,14 @@
   }
 }
 @media (min-width: 768px) {
+  .cabecalho{
+    margin: 1.5rem 24px;
   
+  &__container{
+    width: 33%;
+    padding: 6px 10px;
+  }}
 }
 @media (min-width: 1280px) {
-    .cabecalho{
-      margin: 1.5rem 24px;
-    }
+
   }
