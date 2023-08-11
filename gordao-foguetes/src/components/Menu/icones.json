@@ -3,24 +3,28 @@
       "path": "/assets/images/icones/home-ativo.png",
       "alt": "Ícone de uma casa",
       "link": "Inicío",
+      "to":"/",
       "id": 1
     },
     {
       "path": "/assets/images/icones/mais-vistas-inativo.png",
       "alt": "ícone de um olho",
       "link": "Galeria",
+      "to":"/galeria",
       "id": 2
     },
     {
       "path": "/assets/images/icones/novas-inativo.png",
       "alt": "icone de uma estrelinha brilhante",
       "link": "Projeto Fortão Foguetes",
+      "to":"/fortao",
       "id": 3
     },
     {
       "path": "/assets/images/icones/surpreenda-me-inativo.png",
       "alt": "ícone de uma lâmpada",
       "link": "Space Today",
+      "to":"/spacetoday",
       "id": 4
     }
   ]

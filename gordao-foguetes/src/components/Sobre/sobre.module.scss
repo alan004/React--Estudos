@@ -1,0 +1,43 @@
+@import "../../styles/variaveis";
+
+@media (min-width: 378px) {
+    
+.sobre{
+    font-family: $fonte-normal;
+    margin: 0 30px;
+    margin-bottom: 3rem;
+    line-height: 24px;
+    color: white;
+    &__texto{
+        display: flex;
+        text-align: justify;
+        flex-direction: column;
+    }
+    h2{
+        font-size: 24px;
+        text-align: justify;
+    }
+}
+}
+@media (min-width:768px) {
+    .sobre{
+        margin: 0 50px;
+    &__texto{
+        flex-direction: row;
+        gap: 5rem;
+    }
+    h2{
+        text-align: center;
+    }
+    }
+}
+
+@media (min-width:1200px) {
+    .sobre{
+        margin: 0 10px;
+        margin-bottom: 5rem;
+    h2{
+        text-align: justify; 
+    }
+    }
+}

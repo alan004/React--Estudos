@@ -1,9 +1,9 @@
-
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import Banner from "components/Banner";
 import Cabecalho from "components/Cabecalho";
 import Galeria from "components/Galeria";
+import Sobre from 'components/Sobre';
 import Menu from "components/Menu";
-import Populares from "components/Populares";
 import Rodape from "components/Rodape";
 import bannerSergio from './banner.png'
 import styles from './homepage.module.scss'
@@ -12,16 +12,22 @@ export default function Homepage(){
     return(
         <>
         <Cabecalho/>
+        <Router>
         <main>
             <section className={styles.principal}>
                 <Menu/>
                 <Banner css={styles.principal__imagem} imagem={bannerSergio}/>
             </section>
             <div className={styles.conteudo}>
-                <Galeria/>
+                <Routes>
+                    <Route path="/" element={<Sobre/>}/>
+                    <Route path="/galeria" element={<Galeria/>}/>
+                </Routes>
             </div>
-        </main>
+        </main> 
+        </Router>
         <Rodape/>
         </>
+
     )
 }
