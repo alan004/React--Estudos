@@ -7,6 +7,7 @@ import Menu from "components/Menu";
 import Rodape from "components/Rodape";
 import bannerSergio from './banner.png'
 import styles from './homepage.module.scss'
+import Youtube from 'components/Youtube';
 
 export default function Homepage(){
     return(
@@ -22,6 +23,7 @@ export default function Homepage(){
                 <Routes>
                     <Route path="/" element={<Sobre/>}/>
                     <Route path="/galeria" element={<Galeria/>}/>
+                    <Route path="/fortao" element={<Youtube/>}/>
                 </Routes>
             </div>
         </main> 
