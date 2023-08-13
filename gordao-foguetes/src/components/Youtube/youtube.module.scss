@@ -1,11 +1,29 @@
-.galeria{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    gap: 2rem;
-    flex-direction: row;
-    margin-bottom: 5rem;
-    iframe{
-        margin: 0rem;
+@media (min-width: 378px) {
+    .galeria{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2rem;
+        flex-direction: row;
+        margin-bottom: 6rem;
+        iframe{
+            margin: 0rem;
+            width: 300px;
+            height: 250px;
+        }
+    } 
+}
+
+@media (min-width: 768px) {
+    .galeria{
+        justify-content: space-evenly;
+    }
+}
+
+@media (min-width: 1200px) {
+    .galeria{
+        iframe{
+            width: 480px;
+        }
     }
 }

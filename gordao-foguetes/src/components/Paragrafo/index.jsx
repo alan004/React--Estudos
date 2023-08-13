@@ -3,11 +3,11 @@ export default function Paragrafo({titulos, paragrafos}){
     return(
         <section className={styles.sobre}>
             {titulos.map((titulo => {
-                return <h2>{titulo}</h2>
+                return <h2 key={titulo}>{titulo}</h2>
             }))}
             <div className={styles.sobre__texto}>
                 {paragrafos.map((paragrafo => {
-                    return <p>{paragrafo}</p>
+                    return <p key={paragrafo}>{paragrafo}</p>
                 }))}
             </div>
         </section>

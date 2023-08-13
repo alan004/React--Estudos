@@ -8,6 +8,7 @@ import Rodape from "components/Rodape";
 import bannerSergio from './banner.png'
 import styles from './homepage.module.scss'
 import Youtube from 'components/Youtube';
+import SpaceToday from 'components/SpaceToday';
 
 export default function Homepage(){
     return(
@@ -24,6 +25,7 @@ export default function Homepage(){
                     <Route path="/" element={<Sobre/>}/>
                     <Route path="/galeria" element={<Galeria/>}/>
                     <Route path="/fortao" element={<Youtube/>}/>
+                    <Route path="/spacetoday" element={<SpaceToday/>}/>
                 </Routes>
             </div>
         </main> 
