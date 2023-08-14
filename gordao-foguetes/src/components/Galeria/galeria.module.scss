@@ -19,13 +19,15 @@
       width: 100%;
       flex-wrap: wrap;
     }
-  
+
+ 
     &__card {
       background-color: $azul-escuro;
       border-radius: 20px;
       height: 280px;
       width: 285px;
       cursor: pointer;
+      transition: box-shadow 0.2s ease, transform 0.2s ease;
   
       &:hover {
         box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
@@ -33,6 +35,44 @@
         -webkit-transform: scale(1.1);
         transform: scale(1.025);
         transition: 0.18s;
+      }
+    
+      &.fullscreen {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.95); /* Adicione um fundo escuro */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+        cursor: auto;
+        padding-bottom: 7rem;
+        p{
+          font-size: 32px;
+        }
+        img{
+          width: 80%;
+          height: auto;
+          max-height: 80%;
+        }
+        div{
+          p{
+            font-size:24px
+          }
+          width: 80%;
+        }
+        span{
+          position: absolute;
+          right: 1rem;
+          svg{
+            width: 30px;
+            height: 30px;
+          }
+        }
       }
   
       div {
@@ -76,7 +116,6 @@
       font-family: $fonte-bold;
     }
   }
-  
 }
 
 @media (min-width: 768px) {
@@ -85,6 +124,18 @@
     &__cards{
       justify-content: space-between;
       gap: 1rem 3rem;
+    }
+    &__card{
+      &.fullscreen{
+        span{
+          position: absolute;
+          right: 2rem;
+          svg{
+            width: 50px;
+            height: 50px;
+          }
+        }
+      }
     }
   }
 }
@@ -96,6 +147,22 @@
     &__cards{
       justify-content: flex-start;
       margin-left: 2rem
+    }
+    &__card{
+      &.fullscreen{
+        img,div{
+          width: 70%;
+          height: fit-content;
+        }
+        span{
+          position: absolute;
+          right: 5rem;
+          svg{
+            width: 50px;
+            height: 50px;
+          }
+        }
+      }
     }
   }
 }
