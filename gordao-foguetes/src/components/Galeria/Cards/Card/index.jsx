@@ -1,5 +1,6 @@
 import open from "./open.png";
 import like from "./favorito.png";
+import  { AiOutlineHeart, AiOutlineExpandAlt } from 'react-icons/ai'
 
 export default function Card({ item, style }) {
   return (
@@ -13,8 +14,8 @@ export default function Card({ item, style }) {
       <div>
         <p>{item.creditos}</p>
         <span>
-          <img src={open} alt="icone de expandir" />
-          <img src={like} alt="ícone de coração ou favoritar" />
+            <AiOutlineExpandAlt color="white" size="25" />
+            <AiOutlineHeart color="white" size="25"/>
         </span>
       </div>
     </li>
