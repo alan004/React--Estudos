@@ -1,8 +1,10 @@
-import open from "./open.png";
-import like from "./favorito.png";
-import  { AiOutlineHeart, AiOutlineExpandAlt } from 'react-icons/ai'
+import  { AiFillHeart, AiOutlineHeart, AiOutlineExpandAlt } from 'react-icons/ai'
 
-export default function Card({ item, style }) {
+export default function Card({ item, style, onFav }) {
+  
+  function favoritar(){
+    onFav(item.id)
+  }
   return (
     <li className={style.galeria__card}>
       <img
@@ -14,8 +16,10 @@ export default function Card({ item, style }) {
       <div>
         <p>{item.creditos}</p>
         <span>
-            <AiOutlineExpandAlt color="white" size="25" />
-            <AiOutlineHeart color="white" size="25"/>
+            <AiOutlineExpandAlt color="white" size="35" />
+            <div className="favoritar">
+              {item.favorito ? <AiFillHeart size="23" onClick={favoritar} color='#DC143C'/> : <AiOutlineHeart onClick={favoritar} color="white" size="23" />}
+            </div>
         </span>
       </div>
     </li>

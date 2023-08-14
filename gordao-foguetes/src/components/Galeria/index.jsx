@@ -16,11 +16,19 @@ export default function Galeria(){
         setItens(novasFotos)
     }
 
+    function gerenciarFavorito(id){
+        setItens(itens.map(item => {
+            if(item.id === id) item.favorito = !item.favorito
+            return item
+        }))
+
+    }
+
     return(
         <section className={styles.galeria}>
             <h2>Navegue pela galeria</h2>
             <Tags tags={tags} filtraFotos={filtraFotos} setItens={setItens} />
-            <Cards itens={itens} style={styles} />
+            <Cards itens={itens} style={styles} onFav={gerenciarFavorito}/>
         </section>
     )
 }
