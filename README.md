@@ -19,8 +19,8 @@ Funções disponíveis:
 ![Cards do app](https://user-images.githubusercontent.com/17684918/256535390-67d622f9-ea3f-40f1-a5cb-4f4dd2f72bfc.png)
 
 ### Gordão Foguetes
-Continuando os estudos, agora usei React para tratar de arquivos estáticos e aproveitei para fazer uma homenagem ao geólogo Sergio Sacani. Esse projeto me mostrou como organizar melhor meus componentes e utilizar importações da forma correta. Também foi meu primeiro contato com SASS e achei bem legal a estilização.
+Continuando os estudos, agora usei React para tratar de arquivos estáticos e aproveitei para fazer uma homenagem ao geólogo Sergio Sacani. Esse projeto me mostrou como organizar melhor meus componentes e utilizar importações da forma correta, além de aprender um pouco sobre rotas usando React Router. Também foi meu primeiro contato com SASS e achei bem legal a estilização.
 Recomendo acessar o repositório para ver direitinho como deixei organizado 😊 O projeto está [disponível aqui](https://gordao-foguetes.vercel.app)
-![image](https://github.com/alan004/React--Estudos/assets/17684918/166f11b4-a405-4c8e-a442-b93768de885d)
+![Gordao](https://github.com/alan004/React--Estudos/assets/17684918/2628dfc7-9843-4c82-a109-44c2f862dd52)
 
 <s>Obs: O projeto base do curso era uma galeria sobre espaço, o que me fez lembrar imediatamente do canal [Space Today](https://www.youtube.com/channel/UC_Fk7hHbl7vv_7K8tYqJd5A) do Serjão!</s>
