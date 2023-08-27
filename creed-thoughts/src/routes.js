@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import Rodape from "components/Footer";
 import BaseHeading from "components/BaseHeading";
 import About from "pages/About";
+import Post from "pages/Post";
 
 function AppRoutes() {
   return (
@@ -14,6 +15,7 @@ function AppRoutes() {
         <Route path="/" element={<BaseHeading/>}>
           <Route index element={<Home/>} />
           <Route path="about" element={<About/>} />          
+          <Route path="posts/:id" element={<Post/>} />          
         </Route>
         <Route path="*" element={<>Pagina nao existe</>} />        
       </Routes>
