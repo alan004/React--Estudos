@@ -6,6 +6,7 @@ import Rodape from "components/Footer";
 import BaseHeading from "components/BaseHeading";
 import About from "pages/About";
 import Post from "pages/Post";
+import Erro404 from "pages/404";
 
 function AppRoutes() {
   return (
@@ -17,7 +18,7 @@ function AppRoutes() {
           <Route path="about" element={<About/>} />          
           <Route path="posts/:id" element={<Post/>} />          
         </Route>
-        <Route path="*" element={<>Pagina nao existe</>} />        
+        <Route path="*" element={<Erro404/>}/>        
       </Routes>
       <Rodape/>
     </BrowserRouter>
