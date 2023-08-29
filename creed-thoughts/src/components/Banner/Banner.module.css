@@ -28,9 +28,12 @@
 .imagens > .minhaFoto {
     position: absolute;
     right: 0;
-    bottom: 0;
+    bottom: 10px;
     width: 18vw;
-    border-radius: 50%;
+    border-radius: 40% 10% 10% 10%;
+    -webkit-box-shadow: -74px -22px 54px -70px rgba(0,0,0,0.75);
+    -moz-box-shadow: -74px -22px 54px -70px rgba(0,0,0,0.75);
+    box-shadow: -74px -22px 54px -70px rgba(0,0,0,0.75);
 }
 
 .imagens > .circuloColorido {
