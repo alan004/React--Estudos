@@ -3,6 +3,7 @@ Repositório contendo projetos e conteúdos desenvolvidos durante cursos de Reac
 
 - [ReactStickers](#reactstickers)
 - [Gordão Foguetes](#gordão-foguetes)
+- [Creed Thoughts](#creed-thoughts)
 
 ### ReactStickers
 Iniciando os estudos, essa aplicação exibe cards/figurinhas de jogadores de futebol de acordo com o que for cadastrado pelo usuário. O projeto é feito em cima do alura-organo, e por se tratar de um primeiro contato, a aplicação é simples porém gostei do resultado. 
@@ -19,8 +20,12 @@ Funções disponíveis:
 ![Cards do app](https://user-images.githubusercontent.com/17684918/256535390-67d622f9-ea3f-40f1-a5cb-4f4dd2f72bfc.png)
 
 ### Gordão Foguetes
-Continuando os estudos, agora usei React para tratar de arquivos estáticos e aproveitei para fazer uma homenagem ao geólogo Sergio Sacani. Esse projeto me mostrou como organizar melhor meus componentes e utilizar importações da forma correta, além de aprender um pouco sobre rotas usando React Router. Também foi meu primeiro contato com SASS e achei bem legal a estilização.
+Continuando os estudos, agora usei React para tratar de arquivos estáticos e aproveitei para fazer uma homenagem ao geólogo Sergio Sacani. Esse projeto me mostrou como organizar melhor meus componentes e utilizar importações da forma correta, além de aprender um pouco sobre rotas usando React Router. Também foi meu primeiro contato com SASS e achei bem legal a estilização. Além da base do curso, criei também outras páginas com informações e vídeos.
 Recomendo acessar o repositório para ver direitinho como deixei organizado 😊 O projeto está [disponível aqui](https://gordao-foguetes.vercel.app)
 ![Gordao](https://github.com/alan004/React--Estudos/assets/17684918/2628dfc7-9843-4c82-a109-44c2f862dd52)
 
 <s>Obs: O projeto base do curso era uma galeria sobre espaço, o que me fez lembrar imediatamente do canal [Space Today](https://www.youtube.com/channel/UC_Fk7hHbl7vv_7K8tYqJd5A) do Serjão!</s>
+
+### Creed Thoughts
+O objetivo deste projeto era estudar rotas dinâmicas usando o react-router-dom. A aplicação consiste em um blog para o personagem fictício "Creed" da série The Office. Cada texto aqui foi retirado do InternetArchive, já que em um momento esse blog realmente existiu. Para acessar e explorar as diversas páginas, é só [clicar aqui.](creedthoughts.vercel.app)
+![image](https://github.com/alan004/React--Estudos/assets/17684918/fcfd8bde-109a-46cd-b7bc-10ba2d338822)
