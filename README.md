@@ -27,5 +27,5 @@ Recomendo acessar o repositório para ver direitinho como deixei organizado 😊
 <s>Obs: O projeto base do curso era uma galeria sobre espaço, o que me fez lembrar imediatamente do canal [Space Today](https://www.youtube.com/channel/UC_Fk7hHbl7vv_7K8tYqJd5A) do Serjão!</s>
 
 ### Creed Thoughts
-O objetivo deste projeto era estudar rotas dinâmicas usando o react-router-dom. A aplicação consiste em um blog para o personagem fictício "Creed" da série The Office. Cada texto aqui foi retirado do InternetArchive, já que em um momento esse blog realmente existiu. Para acessar e explorar as diversas páginas, é só [clicar aqui.](creedthoughts.vercel.app)
+O objetivo deste projeto era estudar rotas dinâmicas usando o react-router-dom. A aplicação consiste em um blog para o personagem fictício "Creed" da série The Office. Cada texto aqui foi retirado do InternetArchive, já que em um momento esse blog realmente existiu. Para acessar e explorar as diversas páginas, é só [clicar aqui.](https://creedthoughts.vercel.app)
 ![image](https://github.com/alan004/React--Estudos/assets/17684918/fcfd8bde-109a-46cd-b7bc-10ba2d338822)
